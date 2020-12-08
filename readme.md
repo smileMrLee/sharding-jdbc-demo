@@ -38,7 +38,7 @@
 ``` 
 2. 配置数据源
 ```properties
-# 第一个数据库
+# test0数据源
 sharding.jdbc.datasource.test0.type=com.zaxxer.hikari.HikariDataSource
 sharding.jdbc.datasource.test0.driver-class-name=com.mysql.cj.jdbc.Driver
 sharding.jdbc.datasource.test0.jdbc-url=jdbc:mysql://127.0.0.1:3306/test0?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
@@ -47,7 +47,7 @@ sharding.jdbc.datasource.test0.password=123456
 
 …… 
 
-# 第n个数据库
+# testn数据源
 sharding.jdbc.datasource.test${n}.type=com.zaxxer.hikari.HikariDataSource
 sharding.jdbc.datasource.test${n}.driver-class-name=com.mysql.cj.jdbc.Driver
 sharding.jdbc.datasource.test${n}.jdbc-url=jdbc:mysql://127.0.0.1:3306/test${n}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
